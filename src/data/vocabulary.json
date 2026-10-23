@@ -1,0 +1,104 @@
+{
+  "categories": [
+    {
+      "id": "numbers",
+      "title": "Numbers 1–10",
+      "title_gujarati": "સંખ્યા",
+      "description": "Count from one to ten",
+      "icon_name": "Hash",
+      "theme": "blue",
+      "items": [
+        { "id": "num-1", "english_word": "One", "gujarati_script": "એક", "phonetic_pronunciation": "Ek", "emoji": "1️⃣" },
+        { "id": "num-2", "english_word": "Two", "gujarati_script": "બે", "phonetic_pronunciation": "Bay", "emoji": "2️⃣" },
+        { "id": "num-3", "english_word": "Three", "gujarati_script": "ત્રણ", "phonetic_pronunciation": "Tran", "emoji": "3️⃣" },
+        { "id": "num-4", "english_word": "Four", "gujarati_script": "ચાર", "phonetic_pronunciation": "Chaar", "emoji": "4️⃣" },
+        { "id": "num-5", "english_word": "Five", "gujarati_script": "પાંચ", "phonetic_pronunciation": "Paanch", "emoji": "5️⃣" },
+        { "id": "num-6", "english_word": "Six", "gujarati_script": "છ", "phonetic_pronunciation": "Chha", "emoji": "6️⃣" },
+        { "id": "num-7", "english_word": "Seven", "gujarati_script": "સાત", "phonetic_pronunciation": "Saat", "emoji": "7️⃣" },
+        { "id": "num-8", "english_word": "Eight", "gujarati_script": "આઠ", "phonetic_pronunciation": "Aath", "emoji": "8️⃣" },
+        { "id": "num-9", "english_word": "Nine", "gujarati_script": "નવ", "phonetic_pronunciation": "Nav", "emoji": "9️⃣" },
+        { "id": "num-10", "english_word": "Ten", "gujarati_script": "દસ", "phonetic_pronunciation": "Das", "emoji": "🔟" }
+      ]
+    },
+    {
+      "id": "family",
+      "title": "Family Members",
+      "title_gujarati": "પરિવાર",
+      "description": "Mum, Dad, Dada, Nani and more",
+      "icon_name": "Users",
+      "theme": "orange",
+      "items": [
+        { "id": "fam-mother", "english_word": "Mother", "gujarati_script": "મા", "phonetic_pronunciation": "Maa", "emoji": "👩" },
+        { "id": "fam-father", "english_word": "Father", "gujarati_script": "પપ્પા", "phonetic_pronunciation": "Pappa", "emoji": "👨" },
+        { "id": "fam-brother", "english_word": "Brother", "gujarati_script": "ભાઈ", "phonetic_pronunciation": "Bhai", "emoji": "👦" },
+        { "id": "fam-sister", "english_word": "Sister", "gujarati_script": "બહેન", "phonetic_pronunciation": "Ba-hen", "emoji": "👧" },
+        { "id": "fam-dada", "english_word": "Grandfather (Dad's dad)", "gujarati_script": "દાદા", "phonetic_pronunciation": "Daa-daa", "emoji": "👴" },
+        { "id": "fam-dadi", "english_word": "Grandmother (Dad's mum)", "gujarati_script": "દાદી", "phonetic_pronunciation": "Daa-dee", "emoji": "👵" },
+        { "id": "fam-nana", "english_word": "Grandfather (Mum's dad)", "gujarati_script": "નાના", "phonetic_pronunciation": "Naa-naa", "emoji": "🧓" },
+        { "id": "fam-nani", "english_word": "Grandmother (Mum's mum)", "gujarati_script": "નાની", "phonetic_pronunciation": "Naa-nee", "emoji": "👵🏽" },
+        { "id": "fam-son", "english_word": "Son", "gujarati_script": "દીકરો", "phonetic_pronunciation": "Dee-kro", "emoji": "👶" },
+        { "id": "fam-daughter", "english_word": "Daughter", "gujarati_script": "દીકરી", "phonetic_pronunciation": "Dee-kree", "emoji": "👧🏽" }
+      ]
+    },
+    {
+      "id": "colours",
+      "title": "Colours",
+      "title_gujarati": "રંગો",
+      "description": "Name the colours of the rainbow",
+      "icon_name": "Palette",
+      "theme": "pink",
+      "items": [
+        { "id": "col-red", "english_word": "Red", "gujarati_script": "લાલ", "phonetic_pronunciation": "Laal", "color_hex": "#EF4444" },
+        { "id": "col-blue", "english_word": "Blue", "gujarati_script": "વાદળી", "phonetic_pronunciation": "Vaad-li", "color_hex": "#3B82F6" },
+        { "id": "col-green", "english_word": "Green", "gujarati_script": "લીલો", "phonetic_pronunciation": "Lee-lo", "color_hex": "#22C55E" },
+        { "id": "col-yellow", "english_word": "Yellow", "gujarati_script": "પીળો", "phonetic_pronunciation": "Pee-lo", "color_hex": "#FACC15" },
+        { "id": "col-black", "english_word": "Black", "gujarati_script": "કાળો", "phonetic_pronunciation": "Kaa-lo", "color_hex": "#1F2937" },
+        { "id": "col-white", "english_word": "White", "gujarati_script": "સફેદ", "phonetic_pronunciation": "Sa-fed", "color_hex": "#FFFFFF" },
+        { "id": "col-orange", "english_word": "Orange", "gujarati_script": "નારંગી", "phonetic_pronunciation": "Naa-ran-gee", "color_hex": "#F97316" },
+        { "id": "col-pink", "english_word": "Pink", "gujarati_script": "ગુલાબી", "phonetic_pronunciation": "Gu-laa-bee", "color_hex": "#EC4899" },
+        { "id": "col-purple", "english_word": "Purple", "gujarati_script": "જાંબલી", "phonetic_pronunciation": "Jaam-blee", "color_hex": "#8B5CF6" },
+        { "id": "col-brown", "english_word": "Brown", "gujarati_script": "કથ્થઈ", "phonetic_pronunciation": "Kat-thai", "color_hex": "#92400E" }
+      ]
+    },
+    {
+      "id": "animals",
+      "title": "Animals",
+      "title_gujarati": "પ્રાણીઓ",
+      "description": "From cows to elephants",
+      "icon_name": "PawPrint",
+      "theme": "green",
+      "items": [
+        { "id": "ani-dog", "english_word": "Dog", "gujarati_script": "કૂતરો", "phonetic_pronunciation": "Koo-tro", "emoji": "🐶" },
+        { "id": "ani-cat", "english_word": "Cat", "gujarati_script": "બિલાડી", "phonetic_pronunciation": "Bi-laa-dee", "emoji": "🐱" },
+        { "id": "ani-cow", "english_word": "Cow", "gujarati_script": "ગાય", "phonetic_pronunciation": "Gaay", "emoji": "🐮" },
+        { "id": "ani-elephant", "english_word": "Elephant", "gujarati_script": "હાથી", "phonetic_pronunciation": "Haa-thee", "emoji": "🐘" },
+        { "id": "ani-lion", "english_word": "Lion", "gujarati_script": "સિંહ", "phonetic_pronunciation": "Sinh", "emoji": "🦁" },
+        { "id": "ani-tiger", "english_word": "Tiger", "gujarati_script": "વાઘ", "phonetic_pronunciation": "Vaagh", "emoji": "🐯" },
+        { "id": "ani-monkey", "english_word": "Monkey", "gujarati_script": "વાંદરો", "phonetic_pronunciation": "Vaan-dro", "emoji": "🐵" },
+        { "id": "ani-horse", "english_word": "Horse", "gujarati_script": "ઘોડો", "phonetic_pronunciation": "Gho-do", "emoji": "🐴" },
+        { "id": "ani-bird", "english_word": "Bird", "gujarati_script": "પક્ષી", "phonetic_pronunciation": "Pak-shee", "emoji": "🐦" },
+        { "id": "ani-fish", "english_word": "Fish", "gujarati_script": "માછલી", "phonetic_pronunciation": "Maachh-lee", "emoji": "🐟" }
+      ]
+    },
+    {
+      "id": "phrases",
+      "title": "Everyday Phrases",
+      "title_gujarati": "રોજિંદા વાક્યો",
+      "description": "Say hello, thank you and goodbye",
+      "icon_name": "MessageCircle",
+      "theme": "purple",
+      "items": [
+        { "id": "phr-hello", "english_word": "Hello", "gujarati_script": "નમસ્તે", "phonetic_pronunciation": "Na-mas-tay", "icon_name": "Hand" },
+        { "id": "phr-how-are-you", "english_word": "How are you?", "gujarati_script": "કેમ છો?", "phonetic_pronunciation": "Kem chho?", "icon_name": "Smile" },
+        { "id": "phr-im-fine", "english_word": "I am fine", "gujarati_script": "હું મજામાં છું", "phonetic_pronunciation": "Hoon ma-jaa-maa chhoon", "icon_name": "ThumbsUp" },
+        { "id": "phr-thank-you", "english_word": "Thank you", "gujarati_script": "આભાર", "phonetic_pronunciation": "Aa-bhaar", "icon_name": "HandHeart" },
+        { "id": "phr-yes", "english_word": "Yes", "gujarati_script": "હા", "phonetic_pronunciation": "Haa", "icon_name": "Check" },
+        { "id": "phr-no", "english_word": "No", "gujarati_script": "ના", "phonetic_pronunciation": "Naa", "icon_name": "X" },
+        { "id": "phr-name", "english_word": "What is your name?", "gujarati_script": "તમારું નામ શું છે?", "phonetic_pronunciation": "Ta-maa-roo naam shoo chhe?", "icon_name": "MessageCircle" },
+        { "id": "phr-lets-eat", "english_word": "Let's eat", "gujarati_script": "ચાલો જમીએ", "phonetic_pronunciation": "Chaa-lo ja-mee-ay", "icon_name": "Utensils" },
+        { "id": "phr-good-night", "english_word": "Good night", "gujarati_script": "શુભ રાત્રિ", "phonetic_pronunciation": "Shubh raa-tri", "icon_name": "Moon" },
+        { "id": "phr-goodbye", "english_word": "Goodbye (see you again)", "gujarati_script": "આવજો", "phonetic_pronunciation": "Aav-jo", "icon_name": "Heart" }
+      ]
+    }
+  ]
+}

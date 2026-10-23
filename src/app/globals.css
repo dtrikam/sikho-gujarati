@@ -1,0 +1,183 @@
+@import "tailwindcss";
+
+/* ------------------------------------------------------------------
+ * Design tokens
+ * ------------------------------------------------------------------ */
+@theme {
+  --font-sans: var(--font-nunito), ui-sans-serif, system-ui, sans-serif;
+  /* Baloo Bhai 2 covers both Latin and Gujarati script — friendly & round */
+  --font-display: var(--font-baloo), var(--font-nunito), ui-sans-serif,
+    sans-serif;
+
+  --color-cream: #fff8ef;
+  --color-ink: #1e293b;
+  --color-ink-soft: #64748b;
+
+  --shadow-soft: 0 10px 30px -12px rgb(30 41 59 / 0.18);
+  --shadow-lift: 0 22px 45px -18px rgb(30 41 59 / 0.28);
+
+  --radius-4xl: 2rem;
+
+  --animate-pop-in: pop-in 0.45s cubic-bezier(0.2, 0.9, 0.3, 1.3) both;
+  --animate-slide-in-right: slide-in-right 0.35s ease-out both;
+  --animate-slide-in-left: slide-in-left 0.35s ease-out both;
+  --animate-float: float 6s ease-in-out infinite;
+  --animate-shake: shake 0.4s ease-in-out both;
+
+  @keyframes shake {
+    0%,
+    100% {
+      translate: 0 0;
+    }
+    20%,
+    60% {
+      translate: -8px 0;
+    }
+    40%,
+    80% {
+      translate: 8px 0;
+    }
+  }
+
+  @keyframes pop-in {
+    from {
+      opacity: 0;
+      scale: 0.9;
+    }
+    to {
+      opacity: 1;
+      scale: 1;
+    }
+  }
+  @keyframes slide-in-right {
+    from {
+      opacity: 0;
+      translate: 40px 0;
+    }
+    to {
+      opacity: 1;
+      translate: 0 0;
+    }
+  }
+  @keyframes slide-in-left {
+    from {
+      opacity: 0;
+      translate: -40px 0;
+    }
+    to {
+      opacity: 1;
+      translate: 0 0;
+    }
+  }
+  @keyframes float {
+    0%,
+    100% {
+      translate: 0 0;
+    }
+    50% {
+      translate: 0 -12px;
+    }
+  }
+}
+
+/* ------------------------------------------------------------------
+ * Base
+ * ------------------------------------------------------------------ */
+@layer base {
+  html {
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  body {
+    background-color: var(--color-cream);
+    color: var(--color-ink);
+    /* Soft, colourful background blobs */
+    background-image:
+      radial-gradient(40rem 30rem at 0% 0%, rgb(186 230 253 / 0.55), transparent 60%),
+      radial-gradient(35rem 28rem at 100% 10%, rgb(254 215 170 / 0.5), transparent 60%),
+      radial-gradient(40rem 30rem at 50% 100%, rgb(187 247 208 / 0.45), transparent 60%);
+    background-attachment: fixed;
+  }
+
+  :focus-visible {
+    outline: 3px solid rgb(14 165 233 / 0.7);
+    outline-offset: 3px;
+  }
+}
+
+/* ------------------------------------------------------------------
+ * Flashcard flip
+ * ------------------------------------------------------------------ */
+@layer components {
+  .flip-card {
+    perspective: 1400px;
+    touch-action: pan-y; /* let horizontal swipes reach our handlers */
+  }
+
+  .flip-card-inner {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    transform-style: preserve-3d;
+    transition: transform 0.65s cubic-bezier(0.3, 1.25, 0.5, 1);
+
+    @media (prefers-reduced-motion: reduce) {
+      transition: none;
+    }
+  }
+
+  .flip-card-face {
+    position: absolute;
+    inset: 0;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+  }
+
+  .flip-card-back {
+    transform: rotateY(180deg);
+  }
+
+  .flip-card[data-flipped="true"] .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+
+  /* Reduced motion: swap faces with a gentle cross-fade instead of a 3D spin */
+  @media (prefers-reduced-motion: reduce) {
+    .flip-card[data-flipped="true"] .flip-card-inner {
+      transform: none;
+    }
+    .flip-card-face {
+      transition: opacity 0.2s ease;
+    }
+    .flip-card-back {
+      transform: none;
+      opacity: 0;
+    }
+    .flip-card[data-flipped="true"] .flip-card-back {
+      opacity: 1;
+    }
+    .flip-card[data-flipped="true"] .flip-card-front {
+      opacity: 0;
+    }
+  }
+}
+
+/* Tone down decorative/entry animations for reduced-motion users */
+@layer utilities {
+  .motion-gentle {
+    @media (prefers-reduced-motion: reduce) {
+      animation-name: fade-in !important;
+      animation-duration: 0.2s !important;
+      animation-iteration-count: 1 !important;
+    }
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
