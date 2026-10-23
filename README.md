@@ -2,6 +2,8 @@
 
 A vibrant, family-friendly web application for learning Gujarati words and phrases. Designed for kids, beginners, and families, featuring interactive 3D flashcards, multiple-choice quizzes, and local progress tracking.
 
+🌐 **Live Demo:** [https://dtrikam.github.io/sikho-gujarati/](https://dtrikam.github.io/sikho-gujarati/)
+
 ---
 
 ## ✨ Features
